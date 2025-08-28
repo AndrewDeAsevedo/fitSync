@@ -1,4 +1,4 @@
-# Fitsync
+# fitSync
 
 A web app where users join fitness challenges, track progress, and compete with friends in real time.
 

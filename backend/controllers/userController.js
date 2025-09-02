@@ -1,4 +1,4 @@
-const { getAllUsers, createUser } = require('../models/User');
+const { getAllUsers, createUser, getUserById } = require('../models/User');
 
 const getAllUsersController = async (req, res) => {
   try {
@@ -19,4 +19,11 @@ const createUserController = async (req, res) => {
   }
 };
 
-module.exports = { getAllUsersController, createUserController };
+const getUserByIdController = async (req, res) => {
+  const { id } = req.params;
+  const user = await getUserById(id);
+  res.json(user);
+};
+
+
+module.exports = { getAllUsersController, createUserController, getUserByIdController };

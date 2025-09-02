@@ -4,11 +4,10 @@ const { getAllUsersController, createUserController, getUserByIdController, sign
 
 router.get('/', getAllUsersController);
 router.post('/', createUserController);
-router.get('/:id', getUserByIdController);
+router.get('/id/:id', getUserByIdController);
 
-// authentication
-
+// authentication 
 router.post("/signup", signup);
 router.post("/login", login);
-
+ 
 module.exports = router;

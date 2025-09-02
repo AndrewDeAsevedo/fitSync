@@ -1,7 +1,5 @@
-import { supabase } from "../config/supabaseClient.js";
-
+const supabase = require("../config/supabaseClient.js");
 const { getAllUsers, createUser, getUserById } = require('../models/User');
-
 
 const getAllUsersController = async (req, res) => {
   try {
@@ -23,16 +21,22 @@ const createUserController = async (req, res) => {
 };
 
 const getUserByIdController = async (req, res) => {
-  const { id } = req.params;
-  const user = await getUserById(id);
-  res.json(user);
+  try {
+    const { id } = req.params;
+    const user = await getUserById(id);
+    if (!user) {
+      return res.status(404).json({ error: "User not found" });
+    }
+    res.json(user);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 };
-
 
 // authentication
 
 // Sign up
-export const signup = async (req, res) => {
+const signup = async (req, res) => {
   const { email, password } = req.body;
 
   try {
@@ -44,9 +48,8 @@ export const signup = async (req, res) => {
   }
 };
 
-
 // Login
-export const login = async (req, res) => {
+const login = async (req, res) => {
   const { email, password } = req.body;
 
   try {
@@ -58,5 +61,10 @@ export const login = async (req, res) => {
   }
 };
 
-
-module.exports = { getAllUsersController, createUserController, getUserByIdController };
+module.exports = { 
+  getAllUsersController, 
+  createUserController, 
+  getUserByIdController,
+  signup,
+  login
+};

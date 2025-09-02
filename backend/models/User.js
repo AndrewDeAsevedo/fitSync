@@ -6,10 +6,10 @@ const getAllUsers = async () => {
   return data;
 };
 
-const createUser = async ({ name, email }) => {
+const createUser = async ({ username, email }) => {
   const { data, error } = await supabase
     .from('users')
-    .insert([{ name, email }])
+    .insert([{ username, email }])
     .select();
   if (error) throw error;
   return data[0];

@@ -10,9 +10,9 @@ const getAllUsersController = async (req, res) => {
 };
 
 const createUserController = async (req, res) => {
-  const { name, email } = req.body;
+  const { username, email } = req.body;
   try {
-    const newUser = await createUser({ name, email });
+    const newUser = await createUser({ username, email });
     res.status(201).json(newUser);
   } catch (error) {
     res.status(400).json({ error: error.message });

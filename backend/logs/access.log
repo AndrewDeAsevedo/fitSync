@@ -10,3 +10,117 @@
 2025-09-03T17:11:51.688Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T17:11:51.688Z","headers":{}}
 2025-09-03T17:11:51.689Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":401,"duration":"0.77ms","timestamp":"2025-09-03T17:11:51.689Z","ip":"::1"}
 2025-09-03T17:11:51.689Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":401,"duration":"0ms","timestamp":"2025-09-03T17:11:51.689Z","ip":"::1"}
+2025-09-03T17:18:39.913Z - {"type":"REQUEST","method":"GET","url":"/api/users/id/1","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:18:39.912Z","headers":{}}
+2025-09-03T17:18:39.917Z - {"type":"RESPONSE","method":"GET","url":"/api/users/id/1","statusCode":401,"duration":"6ms","timestamp":"2025-09-03T17:18:39.917Z","ip":"::1"}
+2025-09-03T17:18:39.919Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/id/1","statusCode":401,"duration":"5.24ms","timestamp":"2025-09-03T17:18:39.919Z","ip":"::1"}
+2025-09-03T17:19:32.809Z - {"type":"REQUEST","method":"POST","url":"/api/users/signup","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T17:19:32.809Z","headers":{"content-type":"application/json","content-length":"58"},"body":{"email":"testuser@example.com","password":"Password123!"}}
+2025-09-03T17:19:33.356Z - {"type":"RESPONSE","method":"POST","url":"/api/users/signup","statusCode":201,"duration":"547ms","timestamp":"2025-09-03T17:19:33.356Z","ip":"::1"}
+2025-09-03T17:19:33.357Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/signup","statusCode":201,"duration":"548.24ms","timestamp":"2025-09-03T17:19:33.357Z","ip":"::1"}
+2025-09-03T17:19:39.043Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T17:19:39.043Z","headers":{"content-type":"application/json","content-length":"58"},"body":{"email":"testuser@example.com","password":"Password123!"}}
+2025-09-03T17:19:39.300Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":200,"duration":"257ms","timestamp":"2025-09-03T17:19:39.300Z","ip":"::1"}
+2025-09-03T17:19:39.301Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":200,"duration":"258.03ms","timestamp":"2025-09-03T17:19:39.301Z","ip":"::1"}
+2025-09-03T17:20:11.017Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T17:20:11.017Z","headers":{"authorization":"Bearer ***"}}
+2025-09-03T17:20:11.846Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"829ms","timestamp":"2025-09-03T17:20:11.846Z","ip":"::1"}
+2025-09-03T17:20:11.846Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"829.57ms","timestamp":"2025-09-03T17:20:11.846Z","ip":"::1"}
+2025-09-03T17:21:10.280Z - {"type":"REQUEST","method":"GET","url":"/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:21:10.280Z","headers":{}}
+2025-09-03T17:21:10.281Z - {"type":"RESPONSE","method":"GET","url":"/","statusCode":200,"duration":"1ms","timestamp":"2025-09-03T17:21:10.281Z","ip":"::1"}
+2025-09-03T17:21:10.282Z - {"type":"PERFORMANCE","method":"GET","url":"/","statusCode":200,"duration":"1.61ms","timestamp":"2025-09-03T17:21:10.282Z","ip":"::1"}
+2025-09-03T17:24:16.719Z - {"type":"REQUEST","method":"GET","url":"/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:24:16.718Z","headers":{}}
+2025-09-03T17:24:16.720Z - {"type":"RESPONSE","method":"GET","url":"/","statusCode":200,"duration":"2ms","timestamp":"2025-09-03T17:24:16.720Z","ip":"::1"}
+2025-09-03T17:24:16.720Z - {"type":"PERFORMANCE","method":"GET","url":"/","statusCode":200,"duration":"1.15ms","timestamp":"2025-09-03T17:24:16.720Z","ip":"::1"}
+2025-09-03T17:26:46.502Z - {"type":"REQUEST","method":"GET","url":"/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:26:46.502Z","headers":{"authorization":"Bearer ***"}}
+2025-09-03T17:26:46.503Z - {"type":"RESPONSE","method":"GET","url":"/","statusCode":200,"duration":"1ms","timestamp":"2025-09-03T17:26:46.503Z","ip":"::1"}
+2025-09-03T17:26:46.503Z - {"type":"PERFORMANCE","method":"GET","url":"/","statusCode":200,"duration":"1.27ms","timestamp":"2025-09-03T17:26:46.503Z","ip":"::1"}
+2025-09-03T17:26:59.297Z - {"type":"REQUEST","method":"GET","url":"/api/users","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:26:59.297Z","headers":{"authorization":"Bearer ***"}}
+2025-09-03T17:26:59.650Z - {"type":"RESPONSE","method":"GET","url":"/api/users","statusCode":401,"duration":"352ms","timestamp":"2025-09-03T17:26:59.649Z","ip":"::1"}
+2025-09-03T17:26:59.651Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users","statusCode":401,"duration":"353.85ms","timestamp":"2025-09-03T17:26:59.651Z","ip":"::1"}
+2025-09-03T17:27:00.807Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:27:00.807Z","headers":{"authorization":"Bearer ***"}}
+2025-09-03T17:27:00.896Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":401,"duration":"89ms","timestamp":"2025-09-03T17:27:00.896Z","ip":"::1"}
+2025-09-03T17:27:00.897Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":401,"duration":"89.90ms","timestamp":"2025-09-03T17:27:00.897Z","ip":"::1"}
+2025-09-03T17:28:21.201Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:28:21.201Z","headers":{"authorization":"Bearer ***"}}
+2025-09-03T17:28:21.462Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":401,"duration":"261.36ms","timestamp":"2025-09-03T17:28:21.462Z","ip":"::1"}
+2025-09-03T17:28:21.461Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":401,"duration":"261ms","timestamp":"2025-09-03T17:28:21.461Z","ip":"::1"}
+2025-09-03T17:28:34.455Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T17:28:34.455Z","headers":{"content-type":"application/json","content-length":"58"},"body":{"email":"testuser@example.com","password":"Password123!"}}
+2025-09-03T17:28:34.852Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":200,"duration":"397ms","timestamp":"2025-09-03T17:28:34.852Z","ip":"::1"}
+2025-09-03T17:28:34.852Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":200,"duration":"397.18ms","timestamp":"2025-09-03T17:28:34.852Z","ip":"::1"}
+2025-09-03T17:28:55.632Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:28:55.632Z","headers":{"authorization":"Bearer ***"}}
+2025-09-03T17:28:56.196Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"563ms","timestamp":"2025-09-03T17:28:56.196Z","ip":"::1"}
+2025-09-03T17:28:56.197Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"564.30ms","timestamp":"2025-09-03T17:28:56.197Z","ip":"::1"}
+2025-09-03T17:30:20.948Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:30:20.948Z","headers":{"authorization":"Bearer ***"}}
+2025-09-03T17:30:21.332Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"384ms","timestamp":"2025-09-03T17:30:21.332Z","ip":"::1"}
+2025-09-03T17:30:21.334Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"385.57ms","timestamp":"2025-09-03T17:30:21.334Z","ip":"::1"}
+2025-09-03T17:38:32.651Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:38:32.649Z","headers":{"content-type":"application/json","content-length":"72"},"body":{"email":"andrewdeasevedo11@gmail.com","password":"1234567"}}
+2025-09-03T17:38:33.128Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":200,"duration":"479ms","timestamp":"2025-09-03T17:38:33.128Z","ip":"::1"}
+2025-09-03T17:38:33.130Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":200,"duration":"478.81ms","timestamp":"2025-09-03T17:38:33.130Z","ip":"::1"}
+2025-09-03T17:39:18.143Z - {"type":"REQUEST","method":"GET","url":"/api/users","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:39:18.143Z","headers":{"content-type":"application/json","authorization":"Bearer ***","content-length":"72"}}
+2025-09-03T17:39:18.659Z - {"type":"RESPONSE","method":"GET","url":"/api/users","statusCode":200,"duration":"516ms","timestamp":"2025-09-03T17:39:18.659Z","ip":"::1"}
+2025-09-03T17:39:18.661Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users","statusCode":200,"duration":"517.35ms","timestamp":"2025-09-03T17:39:18.660Z","ip":"::1"}
+2025-09-03T17:40:01.408Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T17:40:01.408Z","headers":{"authorization":"Bearer ***"}}
+2025-09-03T17:40:01.599Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":401,"duration":"190.94ms","timestamp":"2025-09-03T17:40:01.599Z","ip":"::1"}
+2025-09-03T17:40:01.598Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":401,"duration":"190ms","timestamp":"2025-09-03T17:40:01.598Z","ip":"::1"}
+2025-09-03T17:40:07.165Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T17:40:07.165Z","headers":{"content-type":"application/json","content-length":"71"},"body":{"email":"andrewdeasevedo11@gmail.com","password":"your-password-here"}}
+2025-09-03T17:40:07.470Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"305ms","timestamp":"2025-09-03T17:40:07.470Z","ip":"::1"}
+2025-09-03T17:40:07.471Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"305.36ms","timestamp":"2025-09-03T17:40:07.471Z","ip":"::1"}
+2025-09-03T17:40:23.490Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T17:40:23.490Z","headers":{"content-type":"application/json","content-length":"59"},"body":{"email":"andrewdeasevedo11@gmail.com","password":"123456"}}
+2025-09-03T17:40:23.786Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"296ms","timestamp":"2025-09-03T17:40:23.786Z","ip":"::1"}
+2025-09-03T17:40:23.786Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"295.99ms","timestamp":"2025-09-03T17:40:23.786Z","ip":"::1"}
+2025-09-03T17:41:03.348Z - {"type":"REQUEST","method":"GET","url":"/api/users","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:41:03.348Z","headers":{"content-type":"application/json","authorization":"Bearer ***","content-length":"70"}}
+2025-09-03T17:41:03.716Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users","statusCode":200,"duration":"367.98ms","timestamp":"2025-09-03T17:41:03.716Z","ip":"::1"}
+2025-09-03T17:41:03.715Z - {"type":"RESPONSE","method":"GET","url":"/api/users","statusCode":200,"duration":"367ms","timestamp":"2025-09-03T17:41:03.715Z","ip":"::1"}
+2025-09-03T17:41:52.952Z - {"type":"REQUEST","method":"GET","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:41:52.952Z","headers":{"content-type":"application/json","content-length":"69"}}
+2025-09-03T17:41:52.954Z - {"type":"RESPONSE","method":"GET","url":"/api/users/login","statusCode":404,"duration":"2ms","timestamp":"2025-09-03T17:41:52.954Z","ip":"::1"}
+2025-09-03T17:41:52.954Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/login","statusCode":404,"duration":"2.40ms","timestamp":"2025-09-03T17:41:52.954Z","ip":"::1"}
+2025-09-03T17:42:00.077Z - {"type":"REQUEST","method":"GET","url":"/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:42:00.077Z","headers":{"content-type":"application/json","content-length":"69"}}
+2025-09-03T17:42:00.078Z - {"type":"RESPONSE","method":"GET","url":"/login","statusCode":404,"duration":"1ms","timestamp":"2025-09-03T17:42:00.078Z","ip":"::1"}
+2025-09-03T17:42:00.079Z - {"type":"PERFORMANCE","method":"GET","url":"/login","statusCode":404,"duration":"1.33ms","timestamp":"2025-09-03T17:42:00.079Z","ip":"::1"}
+2025-09-03T17:42:06.426Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:42:06.426Z","headers":{"content-type":"application/json","content-length":"69"},"body":{"email":"suyogya.acharya@gmail.com","password":"hiiiii"}}
+2025-09-03T17:42:06.691Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"265ms","timestamp":"2025-09-03T17:42:06.691Z","ip":"::1"}
+2025-09-03T17:42:06.692Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"265.55ms","timestamp":"2025-09-03T17:42:06.692Z","ip":"::1"}
+2025-09-03T17:42:10.550Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:42:10.550Z","headers":{"content-type":"application/json","content-length":"70"},"body":{"email":"suyogya.acharya@gmail.com","password":"hiiiiii"}}
+2025-09-03T17:42:10.638Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"88ms","timestamp":"2025-09-03T17:42:10.638Z","ip":"::1"}
+2025-09-03T17:42:10.638Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"87.92ms","timestamp":"2025-09-03T17:42:10.638Z","ip":"::1"}
+2025-09-03T17:42:13.534Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:42:13.534Z","headers":{"content-type":"application/json","content-length":"68"},"body":{"email":"suyogya.acharya@gmail.com","password":"hiiii"}}
+2025-09-03T17:42:13.534Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":429,"duration":"0ms","timestamp":"2025-09-03T17:42:13.534Z","ip":"::1"}
+2025-09-03T17:42:13.535Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":429,"duration":"1.18ms","timestamp":"2025-09-03T17:42:13.535Z","ip":"::1"}
+2025-09-03T17:43:14.245Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:43:14.245Z","headers":{"content-type":"application/json","content-length":"71"},"body":{"email":"andrewdeasevedo11@gmail.com","password":"123456"}}
+2025-09-03T17:43:14.245Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":429,"duration":"1ms","timestamp":"2025-09-03T17:43:14.245Z","ip":"::1"}
+2025-09-03T17:43:14.246Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":429,"duration":"1.32ms","timestamp":"2025-09-03T17:43:14.246Z","ip":"::1"}
+2025-09-03T17:43:49.809Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T17:43:49.809Z","headers":{"content-type":"application/json","content-length":"59"},"body":{"email":"andrewdeasevedo11@gmail.com","password":"123456"}}
+2025-09-03T17:43:49.809Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":429,"duration":"0ms","timestamp":"2025-09-03T17:43:49.809Z","ip":"::1"}
+2025-09-03T17:43:49.809Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":429,"duration":"0.49ms","timestamp":"2025-09-03T17:43:49.809Z","ip":"::1"}
+2025-09-03T17:44:26.595Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:44:26.595Z","headers":{"content-type":"application/json","authorization":"Bearer ***","content-length":"71"}}
+2025-09-03T17:44:26.864Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":401,"duration":"269ms","timestamp":"2025-09-03T17:44:26.864Z","ip":"::1"}
+2025-09-03T17:44:26.865Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":401,"duration":"269.33ms","timestamp":"2025-09-03T17:44:26.864Z","ip":"::1"}
+2025-09-03T17:44:45.202Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:44:45.202Z","headers":{"content-type":"application/json","authorization":"Bearer ***","content-length":"71"}}
+2025-09-03T17:44:45.408Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":401,"duration":"206ms","timestamp":"2025-09-03T17:44:45.408Z","ip":"::1"}
+2025-09-03T17:44:45.409Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":401,"duration":"206.79ms","timestamp":"2025-09-03T17:44:45.409Z","ip":"::1"}
+2025-09-03T17:50:06.332Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:50:06.331Z","headers":{"content-type":"application/json","authorization":"Bearer ***","content-length":"71"}}
+2025-09-03T17:50:06.759Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":401,"duration":"428ms","timestamp":"2025-09-03T17:50:06.759Z","ip":"::1"}
+2025-09-03T17:50:06.761Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":401,"duration":"428.31ms","timestamp":"2025-09-03T17:50:06.761Z","ip":"::1"}
+2025-09-03T17:50:13.489Z - {"type":"REQUEST","method":"GET","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:50:13.489Z","headers":{"content-type":"application/json","content-length":"71"}}
+2025-09-03T17:50:13.495Z - {"type":"RESPONSE","method":"GET","url":"/api/users/login","statusCode":404,"duration":"6ms","timestamp":"2025-09-03T17:50:13.495Z","ip":"::1"}
+2025-09-03T17:50:13.495Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/login","statusCode":404,"duration":"6.41ms","timestamp":"2025-09-03T17:50:13.495Z","ip":"::1"}
+2025-09-03T17:50:19.078Z - {"type":"REQUEST","method":"GET","url":"/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:50:19.078Z","headers":{"content-type":"application/json","content-length":"71"}}
+2025-09-03T17:50:19.080Z - {"type":"RESPONSE","method":"GET","url":"/login","statusCode":404,"duration":"2ms","timestamp":"2025-09-03T17:50:19.080Z","ip":"::1"}
+2025-09-03T17:50:19.081Z - {"type":"PERFORMANCE","method":"GET","url":"/login","statusCode":404,"duration":"2.73ms","timestamp":"2025-09-03T17:50:19.081Z","ip":"::1"}
+2025-09-03T17:50:27.045Z - {"type":"REQUEST","method":"GET","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:50:27.045Z","headers":{"content-type":"application/json","content-length":"71"}}
+2025-09-03T17:50:27.046Z - {"type":"RESPONSE","method":"GET","url":"/api/users/login","statusCode":404,"duration":"1ms","timestamp":"2025-09-03T17:50:27.046Z","ip":"::1"}
+2025-09-03T17:50:27.046Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/login","statusCode":404,"duration":"1.61ms","timestamp":"2025-09-03T17:50:27.046Z","ip":"::1"}
+2025-09-03T17:50:31.878Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:50:31.878Z","headers":{"content-type":"application/json","content-length":"71"},"body":{"email":"andrewdeasevedo11@gmail.com","password":"123456"}}
+2025-09-03T17:50:32.245Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"366ms","timestamp":"2025-09-03T17:50:32.245Z","ip":"::1"}
+2025-09-03T17:50:32.245Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"366.89ms","timestamp":"2025-09-03T17:50:32.245Z","ip":"::1"}
+2025-09-03T17:51:46.204Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:51:46.204Z","headers":{"content-type":"application/json","content-length":"71"},"body":{"email":"andrewdeasevedo11@gmail.com","password":"123456"}}
+2025-09-03T17:51:46.481Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"277ms","timestamp":"2025-09-03T17:51:46.481Z","ip":"::1"}
+2025-09-03T17:51:46.481Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"277.47ms","timestamp":"2025-09-03T17:51:46.481Z","ip":"::1"}
+2025-09-03T17:52:21.190Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:52:21.189Z","headers":{"content-type":"application/json","content-length":"71"},"body":{"email":"andrewdeasevedo11@gmail.com","password":"123456"}}
+2025-09-03T17:52:21.551Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"362ms","timestamp":"2025-09-03T17:52:21.551Z","ip":"::1"}
+2025-09-03T17:52:21.553Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"362.47ms","timestamp":"2025-09-03T17:52:21.553Z","ip":"::1"}
+2025-09-03T17:52:55.647Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:52:55.646Z","headers":{"content-type":"application/json","content-length":"73"},"body":{"email":"acharya.suyogya@gmail.com","password":"hiiiiiiiii"}}
+2025-09-03T17:52:55.926Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":200,"duration":"280ms","timestamp":"2025-09-03T17:52:55.926Z","ip":"::1"}
+2025-09-03T17:52:55.927Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":200,"duration":"279.84ms","timestamp":"2025-09-03T17:52:55.927Z","ip":"::1"}
+2025-09-03T17:53:14.485Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:53:14.485Z","headers":{"content-type":"application/json","authorization":"Bearer ***","content-length":"73"}}
+2025-09-03T17:53:15.280Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"794ms","timestamp":"2025-09-03T17:53:15.280Z","ip":"::1"}
+2025-09-03T17:53:15.281Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"795.46ms","timestamp":"2025-09-03T17:53:15.281Z","ip":"::1"}
+2025-09-03T17:54:47.744Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:54:47.742Z","headers":{"content-type":"application/json","authorization":"Bearer ***","content-length":"73"}}
+2025-09-03T17:54:48.424Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"682ms","timestamp":"2025-09-03T17:54:48.424Z","ip":"::1"}
+2025-09-03T17:54:48.426Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"682.43ms","timestamp":"2025-09-03T17:54:48.426Z","ip":"::1"}

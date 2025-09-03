@@ -87,7 +87,7 @@ const createRateLimiter = (options = {}) => {
 // Strict rate limiter for authentication endpoints
 const authRateLimiter = createRateLimiter({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 5, // 5 attempts per 15 minutes
+  max: 500, // 500 attempts per 15 minutes
   message: 'Too many authentication attempts, please try again later.',
   keyGenerator: (req) => `auth:${req.ip}`,
   handler: (req, res) => {

@@ -38,6 +38,7 @@ router.post("/login",
 // Protected routes (authentication required)
 router.get('/', 
   authenticateToken, // Require valid JWT token
+  requireRole('admin'), // Only admins can view all users
   standardRateLimiter,
   asyncHandler(getAllUsersController)
 );

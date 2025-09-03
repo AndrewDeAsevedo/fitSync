@@ -35,14 +35,28 @@ const getUserByIdController = async (req, res) => {
 
 // Sign up
 const signup = async (req, res) => {
-  const { email, password } = req.body;
+  const { email, password, adminCode } = req.body;
 
-  const { data, error } = await supabase.auth.signUp({ email, password });
+  // Check if this is an admin signup
+  const isAdmin = adminCode === process.env.ADMIN_CODE;
+  
+  const { data, error } = await supabase.auth.signUp({ 
+    email, 
+    password,
+    options: {
+      data: {
+        role: isAdmin ? 'admin' : 'user',
+        username: email.split('@')[0] // Default username from email
+      }
+    }
+  });
+  
   if (error) throw new AppError(error.message, 400);
   
   res.status(201).json({ 
     user: data.user, 
-    message: "Signup successful" 
+    message: isAdmin ? "Admin signup successful" : "Signup successful",
+    role: isAdmin ? 'admin' : 'user'
   });
 };
 
@@ -93,6 +107,48 @@ const updateProfile = async (req, res) => {
   });
 };
 
+// Create admin user (admin only)
+const createAdmin = async (req, res) => {
+  const { email, password, username } = req.body;
+  
+  // This route is already protected by requireRole('admin')
+  const { data, error } = await supabase.auth.admin.createUser({
+    email,
+    password,
+    email_confirm: true,
+    user_metadata: {
+      role: 'admin',
+      username: username || email.split('@')[0]
+    }
+  });
+  
+  if (error) throw new AppError(error.message, 400);
+  
+  res.status(201).json({ 
+    user: data.user,
+    message: "Admin user created successfully"
+  });
+};
+
+// Promote user to admin (admin only)
+const promoteToAdmin = async (req, res) => {
+  const { userId } = req.params;
+  
+  // This route is already protected by requireRole('admin')
+  const { data, error } = await supabase.auth.admin.updateUserById(userId, {
+    user_metadata: {
+      role: 'admin'
+    }
+  });
+  
+  if (error) throw new AppError(error.message, 400);
+  
+  res.json({ 
+    user: data.user,
+    message: "User promoted to admin successfully"
+  });
+};
+
 module.exports = { 
   getAllUsersController, 
   createUserController, 
@@ -100,5 +156,7 @@ module.exports = {
   signup,
   login,
   getProfile,
-  updateProfile
+  updateProfile,
+  createAdmin,
+  promoteToAdmin
 };

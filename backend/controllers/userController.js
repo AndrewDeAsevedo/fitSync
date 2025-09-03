@@ -1,5 +1,5 @@
 const supabase = require("../config/supabaseClient.js");
-const { getAllUsers, createUser, getUserById } = require('../models/User');
+const { getAllUsers, createUser, getUserById, getUserByEmail } = require('../models/User');
 const { asyncHandler, AppError } = require('../middleware');
 
 const getAllUsersController = async (req, res) => {
@@ -8,15 +8,15 @@ const getAllUsersController = async (req, res) => {
 };
 
 const createUserController = async (req, res) => {
-  const { username, email } = req.body;
+  const { username, email, password, adminCode } = req.body;
   
   // Check if user already exists
-  const existingUser = await getUserById(email);
+  const existingUser = await getUserByEmail(email);
   if (existingUser) {
     throw new AppError('User with this email already exists', 409);
   }
   
-  const newUser = await createUser({ username, email });
+  const newUser = await createUser({ username, email, password, adminCode });
   res.status(201).json(newUser);
 };
 
@@ -40,24 +40,23 @@ const signup = async (req, res) => {
   // Check if this is an admin signup
   const isAdmin = adminCode === process.env.ADMIN_CODE;
   
-  const { data, error } = await supabase.auth.signUp({ 
-    email, 
-    password,
-    options: {
-      data: {
-        role: isAdmin ? 'admin' : 'user',
-        username: email.split('@')[0] // Default username from email
-      }
-    }
-  });
-  
-  if (error) throw new AppError(error.message, 400);
-  
-  res.status(201).json({ 
-    user: data.user, 
-    message: isAdmin ? "Admin signup successful" : "Signup successful",
-    role: isAdmin ? 'admin' : 'user'
-  });
+  try {
+    // Create user in both Supabase Auth and custom users table
+    const newUser = await createUser({ 
+      username: email.split('@')[0], // Default username from email
+      email, 
+      password, 
+      adminCode 
+    });
+    
+    res.status(201).json({ 
+      user: newUser, 
+      message: isAdmin ? "Admin signup successful" : "Signup successful",
+      role: isAdmin ? 'admin' : 'user'
+    });
+  } catch (error) {
+    throw new AppError(error.message, 400);
+  }
 };
 
 // Login

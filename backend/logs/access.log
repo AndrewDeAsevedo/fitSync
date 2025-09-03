@@ -124,3 +124,75 @@
 2025-09-03T17:54:47.744Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:54:47.742Z","headers":{"content-type":"application/json","authorization":"Bearer ***","content-length":"73"}}
 2025-09-03T17:54:48.424Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"682ms","timestamp":"2025-09-03T17:54:48.424Z","ip":"::1"}
 2025-09-03T17:54:48.426Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"682.43ms","timestamp":"2025-09-03T17:54:48.426Z","ip":"::1"}
+2025-09-03T17:55:34.076Z - {"type":"REQUEST","method":"POST","url":"/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:55:34.074Z","headers":{"content-type":"application/json","content-length":"71"},"body":{"email":"andrewdeasevedo11@gmail.com","password":"123456"}}
+2025-09-03T17:55:34.081Z - {"type":"PERFORMANCE","method":"POST","url":"/login","statusCode":404,"duration":"4.27ms","timestamp":"2025-09-03T17:55:34.081Z","ip":"::1"}
+2025-09-03T17:55:34.079Z - {"type":"RESPONSE","method":"POST","url":"/login","statusCode":404,"duration":"5ms","timestamp":"2025-09-03T17:55:34.079Z","ip":"::1"}
+2025-09-03T17:55:47.259Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:55:47.258Z","headers":{"content-type":"application/json","content-length":"71"},"body":{"email":"andrewdeasevedo11@gmail.com","password":"123456"}}
+2025-09-03T17:55:47.627Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"369ms","timestamp":"2025-09-03T17:55:47.627Z","ip":"::1"}
+2025-09-03T17:55:47.628Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":401,"duration":"368.90ms","timestamp":"2025-09-03T17:55:47.628Z","ip":"::1"}
+2025-09-03T17:57:51.521Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:57:51.521Z","headers":{"content-type":"application/json","content-length":"71"},"body":{"email":"andrewdeasevedo11@gmail.com","password":"1234567"}}
+2025-09-03T17:57:51.798Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":200,"duration":"277ms","timestamp":"2025-09-03T17:57:51.798Z","ip":"::1"}
+2025-09-03T17:57:51.798Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":200,"duration":"276.57ms","timestamp":"2025-09-03T17:57:51.798Z","ip":"::1"}
+2025-09-03T17:58:08.988Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:58:08.988Z","headers":{"content-type":"application/json","authorization":"Bearer ***","content-length":"71"}}
+2025-09-03T17:58:09.292Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"304ms","timestamp":"2025-09-03T17:58:09.292Z","ip":"::1"}
+2025-09-03T17:58:09.293Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"304.30ms","timestamp":"2025-09-03T17:58:09.293Z","ip":"::1"}
+2025-09-03T17:58:16.769Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:58:16.769Z","headers":{"authorization":"Bearer ***"}}
+2025-09-03T17:58:17.138Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"369ms","timestamp":"2025-09-03T17:58:17.138Z","ip":"::1"}
+2025-09-03T17:58:17.139Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"369.28ms","timestamp":"2025-09-03T17:58:17.139Z","ip":"::1"}
+2025-09-03T17:58:45.058Z - {"type":"REQUEST","method":"GET","url":"/api/users/id/1","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:58:45.058Z","headers":{"authorization":"Bearer ***"}}
+2025-09-03T17:58:45.303Z - {"type":"RESPONSE","method":"GET","url":"/api/users/id/1","statusCode":400,"duration":"245ms","timestamp":"2025-09-03T17:58:45.303Z","ip":"::1"}
+2025-09-03T17:58:45.304Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/id/1","statusCode":400,"duration":"245.59ms","timestamp":"2025-09-03T17:58:45.304Z","ip":"::1"}
+2025-09-03T17:58:50.330Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T17:58:50.330Z","headers":{"authorization":"Bearer ***"}}
+2025-09-03T17:58:50.908Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"578ms","timestamp":"2025-09-03T17:58:50.908Z","ip":"::1"}
+2025-09-03T17:58:50.909Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"578.19ms","timestamp":"2025-09-03T17:58:50.908Z","ip":"::1"}
+2025-09-03T17:59:34.440Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T17:59:34.440Z","headers":{"content-type":"application/json","authorization":"Bearer ***"}}
+2025-09-03T17:59:34.920Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"480ms","timestamp":"2025-09-03T17:59:34.920Z","ip":"::1"}
+2025-09-03T17:59:34.921Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"480.54ms","timestamp":"2025-09-03T17:59:34.921Z","ip":"::1"}
+2025-09-03T17:59:44.467Z - {"type":"REQUEST","method":"GET","url":"/health","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T17:59:44.467Z","headers":{}}
+2025-09-03T17:59:44.468Z - {"type":"RESPONSE","method":"GET","url":"/health","statusCode":200,"duration":"1ms","timestamp":"2025-09-03T17:59:44.468Z","ip":"::1"}
+2025-09-03T17:59:44.469Z - {"type":"PERFORMANCE","method":"GET","url":"/health","statusCode":200,"duration":"1.53ms","timestamp":"2025-09-03T17:59:44.469Z","ip":"::1"}
+2025-09-03T18:00:14.550Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T18:00:14.549Z","headers":{"content-type":"application/json","authorization":"Bearer ***"}}
+2025-09-03T18:00:14.837Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":401,"duration":"288ms","timestamp":"2025-09-03T18:00:14.837Z","ip":"::1"}
+2025-09-03T18:00:14.839Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":401,"duration":"289.36ms","timestamp":"2025-09-03T18:00:14.839Z","ip":"::1"}
+2025-09-03T18:00:29.036Z - {"type":"REQUEST","method":"GET","url":"/health","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T18:00:29.036Z","headers":{}}
+2025-09-03T18:00:29.037Z - {"type":"RESPONSE","method":"GET","url":"/health","statusCode":200,"duration":"1ms","timestamp":"2025-09-03T18:00:29.037Z","ip":"::1"}
+2025-09-03T18:00:29.037Z - {"type":"PERFORMANCE","method":"GET","url":"/health","statusCode":200,"duration":"1.03ms","timestamp":"2025-09-03T18:00:29.037Z","ip":"::1"}
+2025-09-03T18:00:46.128Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T18:00:46.128Z","headers":{"content-type":"application/json","authorization":"Bearer ***"}}
+2025-09-03T18:00:46.271Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":401,"duration":"143ms","timestamp":"2025-09-03T18:00:46.271Z","ip":"::1"}
+2025-09-03T18:00:46.271Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":401,"duration":"142.63ms","timestamp":"2025-09-03T18:00:46.271Z","ip":"::1"}
+2025-09-03T18:01:22.854Z - {"type":"REQUEST","method":"GET","url":"/health","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T18:01:22.853Z","headers":{}}
+2025-09-03T18:01:22.858Z - {"type":"PERFORMANCE","method":"GET","url":"/health","statusCode":200,"duration":"3.41ms","timestamp":"2025-09-03T18:01:22.858Z","ip":"::1"}
+2025-09-03T18:01:22.856Z - {"type":"RESPONSE","method":"GET","url":"/health","statusCode":200,"duration":"3ms","timestamp":"2025-09-03T18:01:22.856Z","ip":"::1"}
+2025-09-03T18:01:36.576Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T18:01:36.576Z","headers":{"content-type":"application/json","authorization":"Bearer ***"}}
+2025-09-03T18:01:36.859Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"283ms","timestamp":"2025-09-03T18:01:36.859Z","ip":"::1"}
+2025-09-03T18:01:36.860Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"283.97ms","timestamp":"2025-09-03T18:01:36.860Z","ip":"::1"}
+2025-09-03T18:06:02.302Z - {"type":"REQUEST","method":"GET","url":"/health","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T18:06:02.300Z","headers":{}}
+2025-09-03T18:06:02.305Z - {"type":"RESPONSE","method":"GET","url":"/health","statusCode":200,"duration":"6ms","timestamp":"2025-09-03T18:06:02.305Z","ip":"::1"}
+2025-09-03T18:06:02.307Z - {"type":"PERFORMANCE","method":"GET","url":"/health","statusCode":200,"duration":"4.40ms","timestamp":"2025-09-03T18:06:02.307Z","ip":"::1"}
+2025-09-03T18:06:18.900Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T18:06:18.900Z","headers":{"content-type":"application/json","authorization":"Bearer ***"}}
+2025-09-03T18:06:19.635Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":500,"duration":"735ms","timestamp":"2025-09-03T18:06:19.635Z","ip":"::1"}
+2025-09-03T18:06:19.635Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":500,"duration":"735.16ms","timestamp":"2025-09-03T18:06:19.635Z","ip":"::1"}
+2025-09-03T18:07:38.976Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T18:07:38.975Z","headers":{"content-type":"application/json","authorization":"Bearer ***"}}
+2025-09-03T18:07:39.389Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"414ms","timestamp":"2025-09-03T18:07:39.389Z","ip":"::1"}
+2025-09-03T18:07:39.390Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"413.55ms","timestamp":"2025-09-03T18:07:39.390Z","ip":"::1"}
+2025-09-03T18:12:12.752Z - {"type":"REQUEST","method":"GET","url":"/api/users","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T18:12:12.750Z","headers":{"content-type":"application/json","authorization":"Bearer ***","content-length":"73"}}
+2025-09-03T18:12:13.361Z - {"type":"RESPONSE","method":"GET","url":"/api/users","statusCode":200,"duration":"611ms","timestamp":"2025-09-03T18:12:13.361Z","ip":"::1"}
+2025-09-03T18:12:13.363Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users","statusCode":200,"duration":"611.55ms","timestamp":"2025-09-03T18:12:13.363Z","ip":"::1"}
+2025-09-03T18:12:19.200Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"curl/8.7.1","timestamp":"2025-09-03T18:12:19.200Z","headers":{"content-type":"application/json","authorization":"Bearer ***"}}
+2025-09-03T18:12:19.617Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"418ms","timestamp":"2025-09-03T18:12:19.617Z","ip":"::1"}
+2025-09-03T18:12:19.618Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"417.97ms","timestamp":"2025-09-03T18:12:19.618Z","ip":"::1"}
+2025-09-03T18:14:10.362Z - {"type":"REQUEST","method":"GET","url":"/api/users","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T18:14:10.362Z","headers":{"content-type":"application/json","authorization":"Bearer ***","content-length":"73"}}
+2025-09-03T18:14:10.745Z - {"type":"RESPONSE","method":"GET","url":"/api/users","statusCode":200,"duration":"383ms","timestamp":"2025-09-03T18:14:10.745Z","ip":"::1"}
+2025-09-03T18:14:10.747Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users","statusCode":200,"duration":"384.57ms","timestamp":"2025-09-03T18:14:10.747Z","ip":"::1"}
+2025-09-03T18:14:49.825Z - {"type":"REQUEST","method":"GET","url":"/api/users","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T18:14:49.825Z","headers":{"authorization":"Bearer ***"}}
+2025-09-03T18:14:50.292Z - {"type":"RESPONSE","method":"GET","url":"/api/users","statusCode":200,"duration":"467ms","timestamp":"2025-09-03T18:14:50.292Z","ip":"::1"}
+2025-09-03T18:14:50.292Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users","statusCode":200,"duration":"467.56ms","timestamp":"2025-09-03T18:14:50.292Z","ip":"::1"}
+2025-09-03T18:15:25.359Z - {"type":"REQUEST","method":"GET","url":"/api/users","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T18:15:25.359Z","headers":{"authorization":"Bearer ***"}}
+2025-09-03T18:15:25.767Z - {"type":"RESPONSE","method":"GET","url":"/api/users","statusCode":200,"duration":"408ms","timestamp":"2025-09-03T18:15:25.767Z","ip":"::1"}
+2025-09-03T18:15:25.770Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users","statusCode":200,"duration":"411.04ms","timestamp":"2025-09-03T18:15:25.770Z","ip":"::1"}
+2025-09-03T18:16:12.829Z - {"type":"REQUEST","method":"POST","url":"/api/users/login","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T18:16:12.829Z","headers":{"content-type":"application/json","content-length":"74"},"body":{"email":"acharya.suyogya@gmail.com","password":"hiiiiiiiii"}}
+2025-09-03T18:16:13.441Z - {"type":"RESPONSE","method":"POST","url":"/api/users/login","statusCode":200,"duration":"612ms","timestamp":"2025-09-03T18:16:13.441Z","ip":"::1"}
+2025-09-03T18:16:13.441Z - {"type":"PERFORMANCE","method":"POST","url":"/api/users/login","statusCode":200,"duration":"612.22ms","timestamp":"2025-09-03T18:16:13.441Z","ip":"::1"}
+2025-09-03T18:16:46.607Z - {"type":"REQUEST","method":"GET","url":"/api/users/","ip":"::1","userAgent":"PostmanRuntime/7.45.0","timestamp":"2025-09-03T18:16:46.607Z","headers":{"content-type":"application/json","authorization":"Bearer ***","content-length":"74"}}
+2025-09-03T18:16:46.969Z - {"type":"RESPONSE","method":"GET","url":"/api/users/","statusCode":200,"duration":"362ms","timestamp":"2025-09-03T18:16:46.969Z","ip":"::1"}
+2025-09-03T18:16:46.969Z - {"type":"PERFORMANCE","method":"GET","url":"/api/users/","statusCode":200,"duration":"362.36ms","timestamp":"2025-09-03T18:16:46.969Z","ip":"::1"}
